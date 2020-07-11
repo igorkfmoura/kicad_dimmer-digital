@@ -11,7 +11,7 @@
 
   (page A4)
   (title_block
-    (title "Dimmer Digital c/ ATtiny13A")
+    (title "Dimmer Digital c/ ATTiny13")
     (date 2020-07-11)
     (rev 0)
     (company "CEFET/RJ - Laboratório de Inovações Tecnológicas")
