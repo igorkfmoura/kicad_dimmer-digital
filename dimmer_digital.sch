@@ -380,46 +380,6 @@ Text GLabel 9300 1700 0    50   Input ~ 0
 AC2
 Text GLabel 9160 1950 0    50   Output ~ 0
 LOAD1
-Wire Wire Line
-	4880 6540 4790 6540
-Wire Wire Line
-	4790 6640 4910 6640
-Wire Wire Line
-	4790 6740 4890 6740
-Wire Wire Line
-	4890 6840 4790 6840
-Text GLabel 4890 6840 2    50   Input ~ 0
-RESET
-Text GLabel 4890 6740 2    50   BiDi ~ 0
-UNDEFINED1
-Text GLabel 4910 6640 2    50   Output ~ 0
-PHASE_CONTROL
-Text GLabel 4880 6540 2    50   Input ~ 0
-CROSSOVER
-$Comp
-L power:+5V #PWR07
-U 1 1 5F7D21C8
-P 4290 6240
-F 0 "#PWR07" H 4290 6090 50  0001 C CNN
-F 1 "+5V" H 4305 6413 50  0000 C CNN
-F 2 "" H 4290 6240 50  0001 C CNN
-F 3 "" H 4290 6240 50  0001 C CNN
-	1    4290 6240
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR08
-U 1 1 5F7D1BBE
-P 4290 7140
-F 0 "#PWR08" H 4290 6890 50  0001 C CNN
-F 1 "GND" H 4295 6967 50  0000 C CNN
-F 2 "" H 4290 7140 50  0001 C CNN
-F 3 "" H 4290 7140 50  0001 C CNN
-	1    4290 7140
-	1    0    0    -1  
-$EndComp
-Text Notes 3730 7450 0    50   ~ 0
-ICSP Header
 Text Notes 900  7550 0    50   ~ 0
 1. Attiny\n2. 1x 10k R\n3. Pushbutton\n4. Switch\n5. 4N25\n6. MOC3021\n7. 1x 1k R\n8. TIC226\n9. 2x 30k R\n------10. 4x Diode (1N4001)\n11. Fuse\n12. 1x Potentiometer\n13. HLK-PM01\n14. ICSP Header\n15. 2x 330ohm R\n17. 2x LED 3mm\n18. 10uF C
 Text GLabel 2030 5290 0    50   Input ~ 0
@@ -514,7 +474,7 @@ L Switch:SW_DPDT_x2 SW1
 U 1 1 5F484204
 P 2050 3400
 F 0 "SW1" V 2004 3548 50  0000 L CNN
-F 1 "SW_DPDT_x2" V 2095 3548 50  0000 L CNN
+F 1 "SWITCH_SPEED" V 2095 3548 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2050 3400 50  0001 C CNN
 F 3 "~" H 2050 3400 50  0001 C CNN
 	1    2050 3400
@@ -672,17 +632,6 @@ F 1 "TERMINAL_AC" H 9830 951 50  0000 L CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9750 1050 50  0001 C CNN
 F 3 "~" H 9750 1050 50  0001 C CNN
 	1    9750 1050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:AVR-ISP-6 J1
-U 1 1 5F7CF9AE
-P 4390 6740
-F 0 "J1" H 4061 6836 50  0000 R CNN
-F 1 "AVR-ISP-6" H 4061 6745 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" V 4140 6790 50  0001 C CNN
-F 3 " ~" H 3115 6190 50  0001 C CNN
-	1    4390 6740
 	1    0    0    -1  
 $EndComp
 $Comp
