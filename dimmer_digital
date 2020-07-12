@@ -1,30 +1,102 @@
-"Source:"	"/home/ik/Development/KiCad/Sketchbook/kicad_dimmer-digital/dimmer_digital.sch"
-"Date:"	"sáb 11 jul 2020 16:29:23"
-"Tool:"	"Eeschema 5.1.6"
-"Component Count:"	"25"
-"Ref"	"Value"	"Part"	"Footprint"	"Description"	"Vendor"
-"C1"	"10µF"	"Device:CP"	"Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"	"Polarized capacitor"	""
-"C2"	"10µF"	"Device:CP"	"Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"	"Polarized capacitor"	""
-"C3"	"10µF"	"Device:CP"	"Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"	"Polarized capacitor"	""
-"D1"	"LED"	"Device:LED"	"LED_THT:LED_D3.0mm"	"Light emitting diode"	""
-"D2"	"LED"	"Device:LED"	"LED_THT:LED_D3.0mm"	"Light emitting diode"	""
-"J2"	"CONECTOR_LEFT"	"Connector_Generic:Conn_01x04"	"Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"	"Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"	""
-"J3"	"CONNECTOR_SPEED"	"Connector_Generic:Conn_01x02"	"Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"	"Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"	""
-"J4"	"TERMINAL_AC"	"Connector:Screw_Terminal_01x02"	"TerminalBlock:TerminalBlock_bornier-2_P5.08mm"	"Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"	""
-"J5"	"TERMINAL_LOAD"	"Connector:Screw_Terminal_01x02"	"TerminalBlock:TerminalBlock_bornier-2_P5.08mm"	"Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"	""
-"J6"	"CONECTOR_RIGHT"	"Connector_Generic:Conn_01x04"	"Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"	"Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"	""
-"PS1"	"HLK-PM01"	"Converter_ACDC:HLK-PM01"	"Converter_ACDC:Converter_ACDC_HiLink_HLK-PMxx"	"Compact AC/DC board mount power module 3W 5V"	""
-"Q1"	"TIC226"	"Triac_Thyristor:TIC226"	"Package_TO_SOT_THT:TO-220-3_Vertical"	"8A RMS, 400-800V Off-State Voltage, Triac, TO-220"	""
-"R1"	"1kΩ"	"Device:R"	"Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"	"Resistor"	""
-"R2"	"330Ω"	"Device:R"	"Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"	"Resistor"	""
-"R3"	"47kΩ"	"Device:R"	"Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"	"Resistor"	""
-"R4"	"330Ω"	"Device:R"	"Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"	"Resistor"	""
-"R5"	"1kΩ"	"Device:R"	"Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"	"Resistor"	""
-"R6"	"47kΩ"	"Device:R"	"Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"	"Resistor"	""
-"R7"	"47kΩ"	"Device:R"	"Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"	"Resistor"	""
-"RV1"	"R_POT"	"Device:R_POT"	"Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"	"Potentiometer"	""
-"SW1"	"SWITCH_SPEED"	"Switch:SW_DPDT_x2"	"Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"	"Switch, dual pole double throw, separate symbols"	""
-"SW2"	"SW_Push"	"Switch:SW_Push"	"Button_Switch_THT:SW_PUSH_6mm"	"Push button switch, generic, two pins"	""
-"U1"	"ATtiny13A-PU"	"MCU_Microchip_ATtiny:ATtiny13A-PU"	"Package_DIP:DIP-8_W7.62mm_Socket"	"20MHz, 1kB Flash, 64B SRAM, 64B EEPROM, debugWIRE, DIP-8"	""
-"U2"	"MOC3021M"	"Relay_SolidState:MOC3021M"	"Package_DIP:DIP-6_W7.62mm_Socket"	"Random Phase Opto-Triac, Vdrm 400V, Ift 15mA, DIP6"	""
-"U3"	"4N25"	"Isolator:4N25"	"Package_DIP:DIP-6_W7.62mm_Socket"	"DC Optocoupler Base Connected, Vce 30V, CTR 20%, Viso 2500V, DIP6"	""
+.HEA
+.TIM dom 12 jul 2020 05:39:58
+.APP "Eeschema 5.1.6"
+
+.ADD_COM R4 330Ω  Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+.ADD_COM D2 LED  LED_THT:LED_D3.0mm
+.ADD_COM PS1 HLK-PM01  Converter_ACDC:Converter_ACDC_HiLink_HLK-PMxx
+.ADD_COM C3 10µF  Capacitor_THT:CP_Radial_D5.0mm_P2.50mm
+.ADD_COM SW1 SWITCH_SPEED  Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+.ADD_COM C1 10µF  Capacitor_THT:CP_Radial_D5.0mm_P2.50mm
+.ADD_COM R1 1kΩ  Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+.ADD_COM J3 CONNECTOR_SPEED  Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
+.ADD_COM J5 TERMINAL_LOAD  TerminalBlock:TerminalBlock_bornier-2_P5.08mm
+.ADD_COM RV1 R_POT  Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+.ADD_COM J4 TERMINAL_AC  TerminalBlock:TerminalBlock_bornier-2_P5.08mm
+.ADD_COM SW2 SW_Push  Button_Switch_THT:SW_PUSH_6mm
+.ADD_COM C2 10µF  Capacitor_THT:CP_Radial_D5.0mm_P2.50mm
+.ADD_COM J6 CONECTOR_RIGHT  Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical
+.ADD_COM J2 CONECTOR_LEFT  Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical
+.ADD_COM R6 47kΩ  Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+.ADD_COM U3 4N25  Package_DIP:DIP-6_W7.62mm_Socket
+.ADD_COM R7 47kΩ  Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+.ADD_COM R3 47kΩ  Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+.ADD_COM R5 1kΩ  Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+.ADD_COM Q1 TIC226  Package_TO_SOT_THT:TO-220-3_Vertical
+.ADD_COM U2 MOC3021M  Package_DIP:DIP-6_W7.62mm_Socket
+.ADD_COM R2 330Ω  Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+.ADD_COM D1 LED  LED_THT:LED_D3.0mm
+.ADD_COM U1 ATtiny13A-PU  Package_DIP:DIP-8_W7.62mm_Socket
+
+
+.ADD_TER R6.2  Net-(R6-Pad2)
+.TER     U3.1
+.ADD_TER J6.1  +5V
+.TER     PS1.4
+         R4.2
+         RV1.1
+         U1.8
+         R3.2
+         C3.1
+.ADD_TER SW2.1  RESET
+.TER     U1.1
+         J2.1
+.ADD_TER U1.3  SPEED_POT
+.TER     J2.3
+         SW1.2
+.ADD_TER U1.6  CROSSOVER
+.TER     J6.3
+         U3.5
+         R3.1
+.ADD_TER U1.5  PHASE_CONTROL
+.TER     J6.4
+         R2.2
+.ADD_TER PS1.1  AC1
+.TER     R5.1
+         Q1.2
+         J4.1
+         R6.1
+.ADD_TER U3.2  Net-(R7-Pad2)
+.TER     R7.2
+.ADD_TER PS1.2  AC2
+.TER     J5.1
+         R7.1
+         J4.2
+.ADD_TER C2.1  Net-(C2-Pad1)
+.TER     SW2.2
+.ADD_TER D2.1  GND
+.TER     C2.2
+         C1.2
+         J2.4
+         RV1.3
+         C3.2
+         PS1.3
+         J3.2
+         U1.4
+         U3.4
+         U2.2
+.ADD_TER R5.2  Net-(R5-Pad2)
+.TER     U2.6
+.ADD_TER D1.2  Net-(D1-Pad2)
+.TER     R2.1
+.ADD_TER U2.1  Net-(D1-Pad1)
+.TER     D1.1
+.ADD_TER Q1.3  Net-(Q1-Pad3)
+.TER     U2.4
+.ADD_TER U1.7  UNDEFINED1
+.TER     J6.2
+.ADD_TER J5.2  LOAD2
+.TER     Q1.1
+.ADD_TER U1.2  UNDEFINED2
+.TER     J2.2
+.ADD_TER J3.1  SPEED_EXTERNAL
+.TER     R1.1
+.ADD_TER R4.1  Net-(D2-Pad2)
+.TER     D2.2
+.ADD_TER C1.1  Net-(C1-Pad1)
+.TER     SW1.1
+         R1.2
+.ADD_TER SW1.3  Net-(RV1-Pad2)
+.TER     RV1.2
+
+.END

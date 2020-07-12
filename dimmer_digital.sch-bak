@@ -380,8 +380,6 @@ Text GLabel 9300 1700 0    50   Input ~ 0
 AC2
 Text GLabel 9160 1950 0    50   Output ~ 0
 LOAD1
-Text Notes 900  7550 0    50   ~ 0
-1. Attiny\n2. 1x 10k R\n3. Pushbutton\n4. Switch\n5. 4N25\n6. MOC3021\n7. 1x 1k R\n8. TIC226\n9. 2x 30k R\n------10. 4x Diode (1N4001)\n11. Fuse\n12. 1x Potentiometer\n13. HLK-PM01\n14. ICSP Header\n15. 2x 330ohm R\n17. 2x LED 3mm\n18. 10uF C
 Text GLabel 2030 5290 0    50   Input ~ 0
 RESET
 Wire Wire Line
