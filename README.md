@@ -1,1 +1,1 @@
-# kicad_dimmer-digital
+# Dimmer Digital with ATtiny13
