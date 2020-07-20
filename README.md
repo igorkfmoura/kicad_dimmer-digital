@@ -18,10 +18,6 @@ The source is selected by the SWITCH_SPEED (externally connected via 2.54mm head
 
 The 0-5V signal is filted by a low-pass filter defined by R1 and C1.
 
-Response:
-
-![RC_Filter](./extra/RC_Filter.jpeg)
-
 ## Disclaimers
 
 This circuit:

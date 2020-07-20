@@ -1,0 +1,3 @@
+[submodule "libraries/digikey-kicad-library"]
+	path = libraries/digikey-kicad-library
+	url = https://github.com/Digi-Key/digikey-kicad-library
