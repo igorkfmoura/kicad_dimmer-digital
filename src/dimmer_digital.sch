@@ -220,8 +220,6 @@ F 3 "" H 1500 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1650 3600 1850 3600
-Wire Wire Line
 	1500 3750 1500 3900
 $Comp
 L power:GND #PWR02
@@ -236,9 +234,6 @@ F 3 "" H 1500 3900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1500 3350 1500 3450
-Connection ~ 1850 3600
-Wire Wire Line
-	1850 3600 1900 3600
 Text Notes 7700 2050 0    50   ~ 0
 AC Line Terminal
 Wire Wire Line
@@ -288,25 +283,19 @@ Text GLabel 9050 2450 0    50   Input ~ 0
 AC2
 Text GLabel 8910 2700 0    50   Output ~ 0
 LOAD1
-Text GLabel 4830 5340 0    50   Input ~ 0
+Text GLabel 4750 5350 0    50   Input ~ 0
 RESET
-Wire Wire Line
-	4880 5340 4830 5340
 $Comp
 L power:GND #PWR06
 U 1 1 5F2AF6EC
-P 5300 5750
-F 0 "#PWR06" H 5300 5500 50  0001 C CNN
-F 1 "GND" H 5305 5577 50  0000 C CNN
-F 2 "" H 5300 5750 50  0001 C CNN
-F 3 "" H 5300 5750 50  0001 C CNN
-	1    5300 5750
+P 5600 5750
+F 0 "#PWR06" H 5600 5500 50  0001 C CNN
+F 1 "GND" H 5605 5577 50  0000 C CNN
+F 2 "" H 5600 5750 50  0001 C CNN
+F 3 "" H 5600 5750 50  0001 C CNN
+	1    5600 5750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5300 5340 5280 5340
-Wire Wire Line
-	5300 5450 5300 5340
 $Comp
 L Device:R R4
 U 1 1 5F340EE6
@@ -350,17 +339,6 @@ F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 5818 1710 50  0001 C CNN
 F 3 "~" H 5780 1860 50  0001 C CNN
 	1    5780 1860
 	0    -1   -1   0   
-$EndComp
-$Comp
-L Switch:SW_DPDT_x2 SW1
-U 1 1 5F484204
-P 1950 3400
-F 0 "SW1" V 1904 3548 50  0000 L CNN
-F 1 "SWITCH_SPEED" V 1995 3548 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1950 3400 50  0001 C CNN
-F 3 "~" H 1950 3400 50  0001 C CNN
-	1    1950 3400
-	0    1    1    0   
 $EndComp
 $Comp
 L Device:CP C1
@@ -431,23 +409,23 @@ $EndComp
 $Comp
 L Switch:SW_Push SW2
 U 1 1 5E6BD9EF
-P 5080 5340
-F 0 "SW2" H 5080 5625 50  0000 C CNN
-F 1 "SW_Push" H 5080 5534 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm" H 5080 5540 50  0001 C CNN
-F 3 "~" H 5080 5540 50  0001 C CNN
-	1    5080 5340
+P 5400 5350
+F 0 "SW2" H 5400 5635 50  0000 C CNN
+F 1 "SW_Push" H 5400 5544 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 5400 5550 50  0001 C CNN
+F 3 "~" H 5400 5550 50  0001 C CNN
+	1    5400 5350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:CP C2
 U 1 1 5FBE2C59
-P 5300 5600
-F 0 "C2" H 5418 5646 50  0000 L CNN
-F 1 "10µF" H 5418 5555 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 5338 5450 50  0001 C CNN
-F 3 "~" H 5300 5600 50  0001 C CNN
-	1    5300 5600
+P 4900 5600
+F 0 "C2" H 5018 5646 50  0000 L CNN
+F 1 "10µF" H 5018 5555 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 4938 5450 50  0001 C CNN
+F 3 "~" H 4900 5600 50  0001 C CNN
+	1    4900 5600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -560,7 +538,7 @@ L Device:R R3
 U 1 1 5E6C24CE
 P 5450 3180
 F 0 "R3" V 5243 3180 50  0000 C CNN
-F 1 "47kΩ" V 5334 3180 50  0000 C CNN
+F 1 "10kΩ" V 5334 3180 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5380 3180 50  0001 C CNN
 F 3 "~" H 5450 3180 50  0001 C CNN
 	1    5450 3180
@@ -814,4 +792,61 @@ Wire Notes Line
 	4400 6450 5750 6450
 Text Notes 850  7200 0    79   ~ 0
 Notes:\n- Careful with this circuit, it don't include standard safety measures \n   like fuses for AC and have not been tested yet.\n- ATtiny85 may also be used as the Microcontroller
+Connection ~ 4900 5350
+Wire Wire Line
+	4900 5350 4750 5350
+Wire Wire Line
+	4900 5450 4900 5350
+$Comp
+L power:GND #PWR0102
+U 1 1 5F1D1708
+P 4900 5750
+F 0 "#PWR0102" H 4900 5500 50  0001 C CNN
+F 1 "GND" H 4905 5577 50  0000 C CNN
+F 2 "" H 4900 5750 50  0001 C CNN
+F 3 "" H 4900 5750 50  0001 C CNN
+	1    4900 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 5350 5600 5750
+$Comp
+L Device:R R8
+U 1 1 5F1E3A04
+P 4900 5050
+F 0 "R8" V 4693 5050 50  0000 C CNN
+F 1 "10kΩ" V 4784 5050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4830 5050 50  0001 C CNN
+F 3 "~" H 4900 5050 50  0001 C CNN
+	1    4900 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 5F1E414C
+P 4900 4900
+F 0 "#PWR0101" H 4900 4750 50  0001 C CNN
+F 1 "+5V" H 4915 5073 50  0000 C CNN
+F 2 "" H 4900 4900 50  0001 C CNN
+F 3 "" H 4900 4900 50  0001 C CNN
+	1    4900 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 5350 4900 5200
+Wire Wire Line
+	4900 5350 5200 5350
+$Comp
+L Switch:SW_DPDT_x2 SW1
+U 1 1 5F484204
+P 1950 3400
+F 0 "SW1" V 1904 3548 50  0000 L CNN
+F 1 "SWITCH_SPEED" V 1995 3548 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1950 3400 50  0001 C CNN
+F 3 "~" H 1950 3400 50  0001 C CNN
+	1    1950 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1650 3600 1850 3600
 $EndSCHEMATC
